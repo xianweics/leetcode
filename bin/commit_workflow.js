@@ -4,21 +4,21 @@ const inquirer = require('inquirer')
 const chalk = require('chalk')
 
 const execPromise = promisify(exec)
-const statusMessage = [
+const STATUS_MESSAGE = [
   {
     type: 'confirm',
     name: 'status',
     message: 'Whether to continue, run git add：'
   }
 ]
-const addMessage = [
+const ADD_MESSAGE = [
   {
     type: 'confirm',
     name: 'add',
     message: 'Whether to continue, run git commit：'
   }
 ]
-const commitMessage = [
+const COMMIT_MESSAGE = [
   {
     type: 'list',
     name: 'type',
@@ -48,22 +48,21 @@ const consoleInfo = info => {
   console.log(chalk.green.bold(info.stdout))
 }
 
-const run = async () => {
+;(async () => {
   try {
     const status = await execPromise('git status')
     consoleInfo(status)
-    const statusResult = await inquirer.prompt(statusMessage)
+    const statusResult = await inquirer.prompt(STATUS_MESSAGE)
     if (!statusResult.status) {
-      process.exit(1)
+      process.exit(0)
     }
     await execPromise('git add ./ ')
-    const addResult = await inquirer.prompt(addMessage)
-    console.log(addResult)
+    const addResult = await inquirer.prompt(ADD_MESSAGE)
     if (!addResult.add) {
-      process.exit(1)
+      process.exit(0)
     }
     const { type, problemNum, problemName, message } = await inquirer.prompt(
-      commitMessage
+      COMMIT_MESSAGE
     )
     await execPromise(
       `git commit -m'${type}: 第${problemNum}题，题目：${problemName}；提交信息：${message}' `
@@ -73,5 +72,4 @@ const run = async () => {
     process.exit(1)
     console.log(e.message)
   }
-}
-run()
+})()
