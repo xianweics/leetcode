@@ -69,7 +69,7 @@ const consoleInfo = info => {
     )
     console.log(chalk.green.bold('Successfully'))
   } catch (e) {
-    process.exit(1)
+    process.exit(0)
     console.log(e.message)
   }
 })()
