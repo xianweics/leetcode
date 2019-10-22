@@ -67,9 +67,8 @@ const consoleInfo = info => {
     await execPromise(
       `git commit -m'${type}: 第${problemNum}题，题目：${problemName}；提交信息：${message}' `
     )
-    console.log(chalk.green.bold('Successfully'))
   } catch (e) {
+    console.log(chalk.red.bold('Can not repeat commit'))
     process.exit(0)
-    console.log(e.message)
   }
 })()
