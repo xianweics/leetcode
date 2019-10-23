@@ -65,7 +65,7 @@ const consoleInfo = info => {
       COMMIT_MESSAGE
     )
     await execPromise(
-      `git commit -m'${type}: 第${problemNum}题，题目：${problemName}；提交信息：${message}' `
+      `git commit -m"${type}: 第${problemNum}题，题目：${problemName}；提交信息：${message}" `
     )
   } catch (e) {
     console.log(chalk.red.bold('Can not repeat commit'))
