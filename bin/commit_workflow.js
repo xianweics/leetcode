@@ -56,7 +56,7 @@ const consoleInfo = info => {
     if (!statusResult.status) {
       process.exit(0)
     }
-    await execPromise('git add ./ ')
+    await execPromise('git add -A')
     const addResult = await inquirer.prompt(ADD_MESSAGE)
     if (!addResult.add) {
       process.exit(0)
