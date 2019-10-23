@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/xianweics/leetcode.git"
   },
-  "keywords": ["leetcode"],
+  "keywords": [
+    "leetcode"
+  ],
   "author": "nobody",
   "license": "ISC",
   "bugs": {
