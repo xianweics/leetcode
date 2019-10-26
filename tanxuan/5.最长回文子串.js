@@ -33,6 +33,10 @@ var longestPalindrome = function(s) {
       }
       if (s[i - 1] === s[j + 1]) {
         arr[i - 1][j + 1] = arr[i][i]
+        // curr = j - i + 2
+        // if (curr > target.length) {
+        //   target = s.slice(Math.min(i,j), Math.max(i,j)+1)
+        // }
       } else {
         arr[i - 1][j + 1] = false
       }
