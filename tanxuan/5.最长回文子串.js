@@ -10,7 +10,7 @@
  * @return {string}
  */
 var longestPalindrome = function(s) {
-  let len = s.length - 1,
+  /* let len = s.length - 1,
     arr = [],
     target = '',
     curr = ''
@@ -47,6 +47,25 @@ var longestPalindrome = function(s) {
     target = target.length >= curr.length ? target : curr
   }
   console.log(arr, target)
+  return target */
+
+  let len = s.length, target = '', arr = []
+
+  if (s.length === 1 || [...new Set(s)].length === 1) {
+    return s
+  }
+
+  for(let i = 0; i < len; i ++) {
+    arr[i] = []
+    for(let j = 0; j < len; j ++) {
+      let curr = s.slice(i, j + 1)
+      let str = curr.split('').reverse().join('')
+      if (curr == str) {
+        target = target.length >= curr.length ? target : curr
+      }
+    }
+  }
   return target
 }
+
 // @lc code=end

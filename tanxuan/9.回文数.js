@@ -11,15 +11,15 @@
  */
 var isPalindrome = function(x) {
   x = x + ''
-  let len = x.length, i = 0
+  let len = x.length, i = Math.floor(len / 2)
   if (x < 0) {
     return false
   }
-  while(i < len / 2) {
+  while(i >= 0) {
     if (x[i] !== x[len - i - 1]) {
       return false
     }
-    i ++
+    i --
   }
   return true
 };
