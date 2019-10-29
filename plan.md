@@ -2,7 +2,7 @@
 
 ### 目标
 
-- 掌握leetcode（https://leetcode-cn.com/）前150道题，并能处理类似的题型
+- 掌握[leetcode](https://leetcode-cn.com/)前150道题，并能处理类似的题型
 
 ### 要求
 
