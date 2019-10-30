@@ -10,7 +10,9 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-    let index = 0, max = 0, str = ''
+    let index = 0, // 当前字符串长度
+        max = 0, // 最大长度
+        str = '' // 当前字符串
     for(let c of s) {
         // 没有重复的字符串长度
         if (!str.includes(c)) {
