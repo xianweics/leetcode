@@ -22,7 +22,7 @@ var threeSum = function(nums) {
   }
   // 3. 排序
   nums = nums.sort((a, b) => a - b)
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < len - 2; i++) {
     // 4. 如果当前值大于0, 则3数之和不可能等于0,直接结束
     if (nums[i] > 0) break
     // 5. 如果当前项 等于 之前项, 则所有组合会相同, 直接跳过
