@@ -10,26 +10,34 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-  let left = {
-    '(': ')',
-    '{': '}',
-    '[': ']'
-  };
-  let right = {
-    ')': '(',
-    '}': '{',
-    ']': '['
-  };
-  let len = s.length,
-    middle = Math.floor(len / 2) - 1,
-    index = 0;
-  while (index <= middle) {
-    console.log(s[middle - index], s[middle + index + 1]);
-    if (s[middle - index] !== obj[s[middle + index + 1]]) {
-      return false;
+    if (!s) {
+        return true;
     }
-    index++;
-  }
-  return true;
+    if (s.length % 2) {
+        return false;
+    }
+
+    s = s
+        .replace(/\(\)/g, '')
+        .replace(/\{\}/g, '')
+        .replace(/\[\]/g, '');
+    if (!s) {
+        return true;
+    }
+
+    let middle = Math.floor(s.length / 2);
+    while (middle) {
+        s = s
+            .replace(/\(\)/g, '')
+            .replace(/\{\}/g, '')
+            .replace(/\[\]/g, '');
+        let temp = Math.floor(s.length / 2);
+        if (temp < middle) {
+            middle = temp;
+        } else {
+            middle--;
+        }
+    }
+    return s.length === 0;
 };
 // @lc code=end
