@@ -38,13 +38,14 @@
 } */
 
 var twoSum = function(nums, target) {
-  let res = {}, len = nums.length
+  let res = {},
+    len = nums.length;
   for (index = 0; index < len; index++) {
     if (res[nums[index]] !== undefined) {
-      return [nums.indexOf(nums[index]), nums.lastIndexOf(res[nums[index]])]
+      return [nums.indexOf(nums[index]), nums.lastIndexOf(res[nums[index]])];
     } else {
-      res[target - nums[index]] = nums[index]
+      res[target - nums[index]] = nums[index];
     }
   }
-}
+};
 // @lc code=end

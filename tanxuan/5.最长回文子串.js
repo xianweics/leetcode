@@ -49,34 +49,34 @@ var longestPalindrome = function(s) {
   return s.substr(start, max) */
 
   // 中心扩散
-  let len = s.length
+  let len = s.length;
   if (len <= 1 || [...new Set(s)].length === 1) {
-    return s
+    return s;
   }
   let start = 0, // 起始索引
     end = 0, // 结束索引
-    max = 0 // 最大长度
+    max = 0; // 最大长度
   for (let i = 0; i < len; i++) {
-    let len1 = calcCenter(s, i, i) // 一个元素为中心
-    let len2 = calcCenter(s, i, i + 1) // 两个元素为中心
-    max = Math.max(Math.max(len1, len2), max) // 计算当前的最大长度
+    let len1 = calcCenter(s, i, i); // 一个元素为中心
+    let len2 = calcCenter(s, i, i + 1); // 两个元素为中心
+    max = Math.max(Math.max(len1, len2), max); // 计算当前的最大长度
     // 根据长度计算起止索引
     if (max > end - start + 1) {
-      start = i - Math.floor((max - 1) / 2)
-      end = i + Math.floor(max / 2)
+      start = i - Math.floor((max - 1) / 2);
+      end = i + Math.floor(max / 2);
     }
   }
-  return s.substr(start, max)
-}
+  return s.substr(start, max);
+};
 
 function calcCenter(string, left, right) {
   // 从当前元素为中心 向两边扩散查找,直到找到不同的两个元素
   while (left >= 0 && right < string.length && string[left] === string[right]) {
-    left--
-    right++
+    left--;
+    right++;
   }
   // 因为向两边扩散是同时进行的,且不成立才停止所以长度由 r - l + 1 => r - l -1
-  return right - left - 1
+  return right - left - 1;
 }
 
 // @lc code=end

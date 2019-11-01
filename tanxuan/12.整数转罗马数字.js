@@ -24,26 +24,26 @@ var intToRoman = function(num) {
     D: 500,
     CM: 900,
     M: 1000
-  }
+  };
   // 获取键 和 值 数组
-  let keys = Object.keys(obj).reverse()
-  let values = Object.values(obj).reverse()
+  let keys = Object.keys(obj).reverse();
+  let values = Object.values(obj).reverse();
   let i = 0,
-    res = ''
+    res = '';
   // 遍历键
   while (i < keys.length) {
     // 当前的除数
-    let ss = Math.floor(num / values[i])
+    let ss = Math.floor(num / values[i]);
     // 余数
-    num = num % values[i]
+    num = num % values[i];
     // 拼接字符串
-    res += keys[i].repeat(ss)
+    res += keys[i].repeat(ss);
     // 如果减完了则提前退出
     if (!num) {
-      return res
+      return res;
     }
-    i++
+    i++;
   }
-  return res
-}
+  return res;
+};
 // @lc code=end

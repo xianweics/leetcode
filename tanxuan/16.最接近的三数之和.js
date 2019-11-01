@@ -12,30 +12,30 @@
  */
 var threeSumClosest = function(nums, target) {
   // 1. 获取长度, 排序, 计算初始值
-  let len = nums.length
-  nums = nums.sort((a, b) => a - b)
-  let res = nums[0] + nums[1] + nums[2]
+  let len = nums.length;
+  nums = nums.sort((a, b) => a - b);
+  let res = nums[0] + nums[1] + nums[2];
   // 2. 遍历 到 len-2
 
-  for (let i = 0; i < len -2; i++) {
+  for (let i = 0; i < len - 2; i++) {
     // 设置 另外两个 索引
     let l = i + 1,
-      r = len - 1
-      // 遍历
+      r = len - 1;
+    // 遍历
     while (l < r) {
       // 计算当前和
-      let sum = nums[i] + nums[l] + nums[r]
+      let sum = nums[i] + nums[l] + nums[r];
       // 比较哪个值更接近
       if (Math.abs(target - sum) < Math.abs(target - res)) {
-        res = sum
+        res = sum;
       }
       // 判断当前值与目标值的关系, 并更新索引
       if (sum > target) {
-        r--
-      } else if(sum < target) {
-        l++
+        r--;
+      } else if (sum < target) {
+        l++;
       } else {
-        return target
+        return target;
       }
     }
   }
@@ -63,6 +63,6 @@ var threeSumClosest = function(nums, target) {
     }
   } */
 
-  return res
-}
+  return res;
+};
 // @lc code=end

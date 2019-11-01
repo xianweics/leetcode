@@ -39,7 +39,7 @@ var fourSum = function(nums, target) {
         r = len - 1;
 
       // 转换成求两数之和
-      let newTarget2 = newTarget - nums[j]
+      let newTarget2 = newTarget - nums[j];
       // console.log(newTarget, newTarget2);
 
       // 求两数和
