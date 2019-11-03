@@ -8,4 +8,4 @@ https://68wangxianming.github.io/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2/base.html
 https://68wangxianming.github.io/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2/base.html
 
 
-![Image text](https://raw.github.com/yourName/repositpry/master/yourprojectName/img-folder/test.jpg)
+![Image text](https://github.com/xianweics/leetcode/blob/master/wangxianming/images/WX20191103-230353%402x.png)
