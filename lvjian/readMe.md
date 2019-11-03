@@ -49,7 +49,7 @@ function twoSum(nums, target){
     }
 }
 ```
-2.两个数组的交集
+### 2.两个数组的交集
 
 > 题目描述
 
@@ -89,7 +89,7 @@ var intersection = function(nums1, nums2) {
     - 空间复杂度: `O(n)`
 
 
-3. 最后一个单词的长度
+### 3. 最后一个单词的长度
 
 > 题目描述
 
