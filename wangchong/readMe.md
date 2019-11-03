@@ -25,4 +25,4 @@
 
 ### 进展图
 
-[](./progress.jpg)
+![](./progress.jpg)
