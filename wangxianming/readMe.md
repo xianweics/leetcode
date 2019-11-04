@@ -1,2 +1,11 @@
-第一题 https://github.com/68wangxianming/front-end-algorithm/tree/master/leetcode/1.%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C
-第二题 https://github.com/68wangxianming/front-end-algorithm/tree/master/leetcode/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0
+### 1. 两数之和
+https://68wangxianming.github.io/algorithm/leetcode/base.html
+### 2. 两数相加
+https://68wangxianming.github.io/algorithm/leetcode/base.html
+### 557. 反转字符串中的单词
+https://68wangxianming.github.io/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2/base.html
+### 696. 计数二进制子串
+https://68wangxianming.github.io/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2/base.html
+
+
+![Image text](https://github.com/xianweics/leetcode/blob/master/wangxianming/images/WX20191103-230353%402x.png)

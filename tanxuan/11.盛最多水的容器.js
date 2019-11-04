@@ -12,7 +12,7 @@
 
 var maxArea = function(height) {
   let max = 0,
-    len = height.length
+    len = height.length;
 
   /**
    * 暴力
@@ -21,16 +21,16 @@ var maxArea = function(height) {
    */
 
   if (len === 2) {
-    return Math.min(height[0], height[1])
+    return Math.min(height[0], height[1]);
   }
 
   for (let i = 0; i < len - 1; i++) {
     for (let j = i + 1; j < len; j++) {
-      let curr = Math.min(height[j], height[i]) * (j - i)
-      max = curr > max ? curr : max
+      let curr = Math.min(height[j], height[i]) * (j - i);
+      max = curr > max ? curr : max;
     }
   }
 
-  return max
-}
+  return max;
+};
 // @lc code=end
