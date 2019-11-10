@@ -12,4 +12,4 @@ https://68wangxianming.github.io/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2/base.html
 https://68wangxianming.github.io/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2/base.html
 
 
-![](./images/WX20191110-162720@2x.jpg)
+![](./progress.png)
