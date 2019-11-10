@@ -79,7 +79,7 @@
      * @param {string} s
      * @return {number}
      */
-    var lengthOfLongestSubstring = function(s) {
+    const lengthOfLongestSubstring = function(s) {
       let max = 0, str = '';
       
       for(let i = 0; i < s.length; i++){
