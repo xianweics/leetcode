@@ -57,3 +57,6 @@
 - 工具选择：
   - chrome leetcode插件：https://chrome.google.com/webstore/detail/leetcode-helper/gleoepapfjkpcijfmchfabbnldejdnoj
   - vscode 插件：https://marketplace.visualstudio.com/items?itemName=shengchen.vscode-leetcode
+
+- 文档地址：
+  - https://docs.qq.com/doc/DR1RnSnpyWEdIa3dJ
