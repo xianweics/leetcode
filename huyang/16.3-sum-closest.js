@@ -12,30 +12,34 @@
  */
 var threeSumClosest = function(nums, target) {
     let arr = [];
-	let res = [];
+	let res = target;
+    let tmp = 0;
 	let min = 10000;
     if(nums.length == 3){
         return nums[0]+nums[1]+nums[2];
     } else{
         for(let i=0;i<nums.length;i++){
             for(let j=i+1;j<nums.length;j++){
-                for(let k=j+1;k<nums.length;k++){
-                	arr.push([nums[i],nums[j],nums[k],nums[i]+nums[j]+nums[k]]);
-            	}
+                arr.push([i,j,nums[i]+nums[j]]);
             }
         }
         for(let i in arr){
-        	if(arr[i][3] == target){
-        		return target;
-        	} else{
-        		if(Math.abs(arr[i][3]-target) < min){
-        			min = Math.abs(arr[i][3]-target);
-        			res = arr[i];
-        		}
-        	}
+            for(let j in nums){
+                if(j != arr[i][0] && j != arr[i][1]){
+                    if(arr[i][2] == target-nums[j]){
+                        return target;
+                    } else{
+                        num = arr[i][2]+nums[j]>target ? arr[i][2]+nums[j]-target : target-arr[i][2]-nums[j];
+                        if(num < min){
+                            min = num;
+                            res = arr[i][2]+nums[j];
+                        }
+                    }
+                }
+            }
         }
     }
-    return res[3];
+    return res;
 };
 // @lc code=end
 
