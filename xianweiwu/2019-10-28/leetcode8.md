@@ -61,7 +61,7 @@
      * @param {string} str
      * @return {number}
      */
-    var myAtoi = function(str) {
+    const myAtoi = function(str) {
       const n = parseInt(str);
       if(Number.isNaN(n)){
         return 0

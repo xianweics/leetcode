@@ -57,7 +57,7 @@
      * @param {number} x
      * @return {boolean}
      */
-    var isPalindrome = function(x) {
+    const isPalindrome = function(x) {
       const str = x.toString();
       const l = str.length;
       for(let i = 0; i < l / 2; i++){
