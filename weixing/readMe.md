@@ -12,4 +12,5 @@
 
 ##### 第三周（2019.11.11 - 2019.11.17）
 
-1. [回文数](https://github.com/Vstar18/FE-knowledge-algorithm/issues/7)
+1. [回文数--动态规划](https://github.com/Vstar18/FE-knowledge-algorithm/issues/7)
+2. [盛最多水的容器--双指针](https://github.com/Vstar18/FE-knowledge-algorithm/issues/9)
