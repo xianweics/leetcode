@@ -9,6 +9,8 @@
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
+// leetcode执行结果不一致，但应该是对的
+// 字典序算法
 var nextPermutation = function(nums) {
     if(nums.length<2) return nums;
     let index = 0;
