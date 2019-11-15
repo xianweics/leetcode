@@ -65,7 +65,7 @@
      * @param {number} x
      * @return {number}
      */
-    var reverse = function(x) {
+    const reverse = function(x) {
       if(x === 0) return 0;
       while(x % 10 === 0){
         x /= 10;
