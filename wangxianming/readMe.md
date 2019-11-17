@@ -11,5 +11,15 @@ https://68wangxianming.github.io/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2/base.html
 ### 696. 计数二进制子串
 https://68wangxianming.github.io/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2/base.html
 
+### 17. 电话号码的字母组合
+
+[https://68wangxianming.github.io/algorithm/%E6%95%B0%E7%BB%84/base.html](https://68wangxianming.github.io/algorithm/数组/base.html)
+
+### 914. 卡牌分组
+
+[https://68wangxianming.github.io/algorithm/%E6%95%B0%E7%BB%84/base.html](https://68wangxianming.github.io/algorithm/数组/base.html)
+
+
+
 
 ![](./progress.png)
