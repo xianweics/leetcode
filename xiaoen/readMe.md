@@ -10,3 +10,6 @@
 - [**9. 回文数**](https://github.com/shownoso/algorithms/issues/9)
 - [**11. 盛最多水的容器**](https://github.com/shownoso/algorithms/issues/11)
 - [**12. 整数转罗马数字**](https://github.com/shownoso/algorithms/issues/12)
+- [**13. 罗马数字转整数**](https://github.com/shownoso/algorithms/issues/13)
+- [**14. 最长公共前缀**](https://github.com/shownoso/algorithms/issues/14)
+- [**15. 三数之和**](https://github.com/shownoso/algorithms/issues/15)
