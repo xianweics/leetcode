@@ -4,7 +4,7 @@
 完成情况：5,27
 进度：如下图    
 
-![](assets/we_progress.png) 
+![](assets/w4_progress.png) 
 
 # List  
 
