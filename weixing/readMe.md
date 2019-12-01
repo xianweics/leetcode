@@ -19,3 +19,7 @@
 
 1. [罗马数字转整数](https://github.com/Vstar18/FE-knowledge-algorithm/issues/11)
 2. [最长公共前缀](https://github.com/Vstar18/FE-knowledge-algorithm/issues/12)
+
+#### 第五周（2019.11.25-2019.12.01）
+1. [三数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/13)
+2. [最接近的三数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/14)
