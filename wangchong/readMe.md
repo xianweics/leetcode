@@ -8,7 +8,10 @@
 - [**11、盛最多水的容器**](https://github.com/hubvue/algorithms/issues/35)
 - [**12、整数转罗马数字**](https://github.com/hubvue/algorithms/issues/36)
 - [**15. 三数之和**](https://github.com/hubvue/algorithms/issues/37)
-
+- [**16、最接近的三数之和**](https://github.com/hubvue/algorithms/issues/38)
+- [**17、电话号码的字母组合**](https://github.com/hubvue/algorithms/issues/39)
+- [**18、四数之和**](https://github.com/hubvue/algorithms/issues/40)
+- [**19、删除链表的倒数第N个节点**](https://github.com/hubvue/algorithms/issues/41)
 
 ## 进度统计
 
@@ -42,6 +45,14 @@
 
 * 总刷题数：99 / 1247
 
+- 第五周进度: 3 题 截止时间: 2019-12-01 难度: 0 简 1 中 2 难
+
+  - 4、寻找两个有序数组的中位数
+  - 25、K 个一组翻转链表
+  - 29、两数相除
+
+* 总刷题数：99 / 1247
+
 ### 笔记进度
 
 - 第一周进度：2 题 截止时间：2019-11-03
@@ -62,6 +73,13 @@
 
   - 15、三数之和
 
+- 第五周进度：4 题 截止时间：2019-12-01
+
+  - 16、最接近的三数之和
+  - 17、电话号码的字母组合
+  - 18、四数之和
+  - 19、删除链表的倒数第N个节点
+
 ### 进展图
 
-![](./2019-11-24.png)
+![](./2019-12-01.jpg)
