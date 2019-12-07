@@ -15,3 +15,5 @@
 - [**15. 三数之和**](https://github.com/shownoso/algorithms/issues/15)
 - [**16. 最接近的三数之和**](https://github.com/shownoso/algorithms/issues/16)
 - [**17. 电话号码的字母组合**](https://github.com/shownoso/algorithms/issues/17)
+- [**18. 四数之和**](https://github.com/shownoso/algorithms/issues/18)
+- [**19. 删除链表的倒数第N个节点**](https://github.com/shownoso/algorithms/issues/19)
