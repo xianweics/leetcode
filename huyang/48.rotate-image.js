@@ -9,18 +9,20 @@
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
-// leetcode执行结果不一致，但应该是对的
+// 旋转图像
+// 原地旋转，不能创建新的数组矩阵
+// 观察例子可以直接写代码
 var rotate = function(matrix) {
-    let res = [];
+    let len = matrix.length;
     let tmp = [];
     for(let j in matrix[0]){
-        for(let i=matrix.length-1;i>-1;i--){
+        for(let i=len-1;i>-1;i--){
             tmp.push(matrix[i][j]);
         }
-        res.push(tmp);
+        matrix.push(tmp);
         tmp = [];
     }
-    return res;
+    matrix.splice(0, len);
 };
 // @lc code=end
 
