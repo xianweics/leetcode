@@ -23,3 +23,7 @@
 #### 第五周（2019.11.25-2019.12.01）
 1. [三数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/13)
 2. [最接近的三数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/14)
+
+#### 第六周（2019.12.02-2019.12.08）
+1. [有效的括号](https://github.com/Vstar18/FE-knowledge-algorithm/issues/15)
+2. [最长公共前缀](https://github.com/Vstar18/FE-knowledge-algorithm/issues/16)
