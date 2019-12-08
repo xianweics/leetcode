@@ -8,4 +8,22 @@
 ##### 第二周（2019.11.04 - 2019.11.10）
 
 1. [整数反转](https://github.com/Vstar18/FE-knowledge-algorithm/issues/5)
-1. [字符串转换整数](https://github.com/Vstar18/FE-knowledge-algorithm/issues/6)
+2. [字符串转换整数](https://github.com/Vstar18/FE-knowledge-algorithm/issues/6)
+
+##### 第三周（2019.11.11 - 2019.11.17）
+
+1. [回文数--动态规划](https://github.com/Vstar18/FE-knowledge-algorithm/issues/7)
+2. [盛最多水的容器--双指针](https://github.com/Vstar18/FE-knowledge-algorithm/issues/9)
+
+##### 第四周（2019.11.18 - 2019.11.24）
+
+1. [罗马数字转整数](https://github.com/Vstar18/FE-knowledge-algorithm/issues/11)
+2. [最长公共前缀](https://github.com/Vstar18/FE-knowledge-algorithm/issues/12)
+
+#### 第五周（2019.11.25-2019.12.01）
+1. [三数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/13)
+2. [最接近的三数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/14)
+
+#### 第六周（2019.12.02-2019.12.08）
+1. [有效的括号](https://github.com/Vstar18/FE-knowledge-algorithm/issues/15)
+2. [最长公共前缀](https://github.com/Vstar18/FE-knowledge-algorithm/issues/16)

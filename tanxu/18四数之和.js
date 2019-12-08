@@ -43,5 +43,3 @@ var fourSum = function(nums, target) {
     return result
 };
 console.log(fourSum([1,0,-1,0,-2,2], 0))
-
-console.log([123,567].toString())
