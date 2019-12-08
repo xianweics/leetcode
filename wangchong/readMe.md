@@ -12,6 +12,8 @@
 - [**17、电话号码的字母组合**](https://github.com/hubvue/algorithms/issues/39)
 - [**18、四数之和**](https://github.com/hubvue/algorithms/issues/40)
 - [**19、删除链表的倒数第 N 个节点**](https://github.com/hubvue/algorithms/issues/41)
+- [**20、有效的括号**](https://github.com/hubvue/algorithms/issues/42)
+- [**21、合并两个有序链表**](https://github.com/hubvue/algorithms/issues/43)
 
 ## 进度统计
 
