@@ -17,6 +17,7 @@ function doExchange(arr){
       // 2层嵌套循环,将组合放到新数组中
       for(var i=0; i<len1; i++){
           for(var j=0; j<len2; j++){
+              //将第一个数组和第二个数组拼接起来
               items[index] = arr[0][i] +"|"+ arr[1][j];
               index++;
           }
@@ -25,11 +26,14 @@ function doExchange(arr){
       var newArr = new Array(len -1);
       // console.log('newArr: ', newArr);
       for(var i=2;i<arr.length;i++){
+          //从2开始，第三位 保持不变合并到原数组
           newArr[i-1] = arr[i];
           // console.log('arr[i]: ', arr[i]);
       }
+      //第2和第三 合并变成 第一位
       newArr[0] = items;
       // 执行回调
+      //循环函数
       return doExchange(newArr);
   }else{
     console.log(arr[0])
