@@ -17,3 +17,5 @@
 - [**17. 电话号码的字母组合**](https://github.com/shownoso/algorithms/issues/17)
 - [**18. 四数之和**](https://github.com/shownoso/algorithms/issues/18)
 - [**19. 删除链表的倒数第N个节点**](https://github.com/shownoso/algorithms/issues/19)
+- [**20. 有效的括号**](https://github.com/shownoso/algorithms/issues/20)
+- [**21. 合并两个有序链表**](https://github.com/shownoso/algorithms/issues/21)
