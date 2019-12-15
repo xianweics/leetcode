@@ -14,6 +14,8 @@
 - [**19、删除链表的倒数第 N 个节点**](https://github.com/hubvue/algorithms/issues/41)
 - [**20、有效的括号**](https://github.com/hubvue/algorithms/issues/42)
 - [**21、合并两个有序链表**](https://github.com/hubvue/algorithms/issues/43)
+- [**22、括号生成**](https://github.com/hubvue/algorithms/issues/44)
+- [**23、合并 K 个排序链表**](https://github.com/hubvue/algorithms/issues/45)
 
 ## 进度统计
 
@@ -61,7 +63,12 @@
   - 226、翻转二叉树
   - 671、二叉树中第二小的节点
 
-* 总刷题数：105 / 1247
+- 第七周进度: 2 题 截止时间: 2019-12-15 难度: 2 简 0 中 0 难
+
+  - 263、丑数
+  - 268、缺失数字
+
+* 总刷题数：107 / 1247
 
 ### 笔记进度
 
@@ -95,6 +102,11 @@
   - 20、有效的括号
   - 21、合并两个有序链表
 
+- 第七周进度：2 题 截止时间：2019-12-15
+
+  - 22、括号生成
+  - 23、合并 K 个排序链表
+
 ### 进展图
 
-![](./2019-12-08.jpg)
+![](./2019-12-15.jpg)
