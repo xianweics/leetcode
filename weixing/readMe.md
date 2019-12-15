@@ -27,3 +27,7 @@
 #### 第六周（2019.12.02-2019.12.08）
 1. [有效的括号](https://github.com/Vstar18/FE-knowledge-algorithm/issues/15)
 2. [最长公共前缀](https://github.com/Vstar18/FE-knowledge-algorithm/issues/16)
+
+#### 第七周（2019.12.08-2019.12.15）
+1. [移除元素](https://github.com/Vstar18/FE-knowledge-algorithm/issues/17)
+2. [实现strStr()](https://github.com/Vstar18/FE-knowledge-algorithm/issues/18)
