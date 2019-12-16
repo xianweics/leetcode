@@ -47,7 +47,7 @@ var nextPermutation = function(nums) {
     	let tmp = numsCopy[i];
     	numsCopy[i] = numsCopy[j];
     	numsCopy[j] = tmp;
-    }
+	}
     return numsCopy;
 };
 // @lc code=end

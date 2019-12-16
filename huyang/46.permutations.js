@@ -33,5 +33,19 @@ var permute = function(nums) {
 	inner(tmp);
 	return res;
 };
+// 法二
+var pailie = function(arr, tmp, res){
+	if(arr.length == 0)	res.push(tmp);
+	for(let i=0; i<arr.length; i++){
+		let newArr = [...arr];
+		newArr.splice(i, 1);
+		pailie(newArr, [...tmp, ...[arr[i]]], res);
+	}
+}
+var permute = function(nums) {
+    let res = [];
+	pailie(nums, [], res);
+	return res;
+};
 // @lc code=end
 

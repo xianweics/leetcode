@@ -10,32 +10,17 @@
  * @return {string[]}
  */
 // 括号生成
-// 递归
-// 超时了
-var dd = function(index, arr, n) {
-    if(index == n)  return arr;
-    index++;
-    let str = '';
-    let s = ''
-    let tmp = [];
-    for(let k in arr){
-        str = arr[k];
-        for(let i=0; i<=2*index; i++){
-            str = arr[k].slice(0, i+1) + '(' + arr[k].slice(i+1);
-            for(let j=i+1; j<=str.length; j++){
-                s = str;
-                s = s.slice(0, j+1) + ')' + s.slice(j+1);
-                if(tmp.indexOf(s) < 0)  tmp.push(s);
-            }
-        }
-    }
-    return dd(index, tmp, n);
-}
+// 回溯法——1、选择2、条件3、结束
+var parenthesis = function(str, res, l, r) {
+	if(l==0 && r==0) res.push(str);
+	if(l>0) parenthesis(str + "(", res, l-1, r);
+	if(r>l)	parenthesis(str + ")", res, l, r-1);
+};
 var generateParenthesis = function(n) {
-    if(n==0) return [];
-    if(n==1) return ["()"];
-    if(n==2) return ["()()", "(())"];
-    return dd(1, ['()'], n); 
-}
+    let l = n, r = n;   // 左括号右括号个数都为n
+    let res = [];       // 结果集
+    parenthesis("", res, l, r);
+    return res;
+};
 // @lc code=end
 
