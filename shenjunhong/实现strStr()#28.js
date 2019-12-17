@@ -13,14 +13,13 @@ var strStr = function(haystack, needle) {
   if(haystack.indexOf(needle) > -1){
     for(let j in haystack){
       if(needle.indexOf(haystack[j])> -1){
-        var num  = Number(j) + len;
-        var falg = true;
-        for(let i = len - 1; i > 0; i--){
-          if(haystackArr[num-i] == needleArr[len-i]){
-            console.log('haystackArr[num-i] == needleArr[len-i]: ', haystackArr[num-i], needleArr[len-i]);
-          
+        var nums = 0;
+        for(let a = 0; a< len; a++){
+          if(haystackArr[Number(j)+a] == needleArr[a]){
+            nums++
+          }
         }
-        if(falg){
+        if(nums == len){
           return j
         }
       }
@@ -31,11 +30,12 @@ var strStr = function(haystack, needle) {
 
 
 
-// var haystack = "hello", needle = "ll"
+
+// var haystack = "hello", needle = "ll"  //2
 // var haystack = "aaaaa", needle = "bba"
 
-// var haystack = "mississippi", needle = "issip";
-// var haystack = "mississippi",needle = "sipp";
-var haystack =  "bbbbababbbaabbba",needle= "abb"
-var val = strStr(haystack, needle)
-console.log('val: ', val);
+// var haystack = "mississippi", needle = "issip"; //5
+var haystack = "mississippi",needle = "sipp"; // 6
+// var haystack =  "bbbbababbbaabbba",needle= "abb"; //6
+var val = strStr(haystack, needle);
+console.log('val: ', val)
