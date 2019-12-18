@@ -36,7 +36,6 @@ var generateParenthesis = function(n) {
 var generate = function(list, str, left, right){
   // console.log('list, str, left, right: ', list, str, left, right);
 
-
   if(left == 0 && right ==0){
     list.push(str);
     return;
