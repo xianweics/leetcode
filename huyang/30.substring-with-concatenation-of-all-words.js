@@ -34,6 +34,18 @@ var findSubstring = function(s, words) {
         pailie(words, '', makeup);
         makeup = [...makeup];
     }
+    if(makeup[0].length > s.length) return [];
+    if(makeup[0].length == s.length){
+        let tmp = 0;
+        for(let i in makeup){
+            if(makeup[i] == s){
+                 return [0];
+            } else{
+                tmp++;
+            }
+        }
+        if(tmp == makeup.length) return [];
+    }
     // 寻找字符串中所有子串出现的位置
     for(let i in makeup){
         let temp = s.indexOf(makeup[i]);

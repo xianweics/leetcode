@@ -9,63 +9,29 @@
  * @param {string} s
  * @return {string}
  */
+// 最长回文字符串
+// 中心扩展算法
+var expandAroundCenter = function(s, l, r){
+    let L = l, R = r;
+    while(L > -1 && R<s.length && s.charAt(L) == s.charAt(R)){
+        L--;
+        R++;
+    }
+    return R-L-1;
+}
 var longestPalindrome = function(s) {
-    let a = s.split("");
-    let arr = [];
-    let trr = [];
-    let brr = [];
-    let res = "";
-    let max = 0;
-    if(a.length == 0 || a.length == 1){
-        return a.join(""); 
-    }
-    if(a.length == 2){
-        if(a[0] == a[1]){
-            return a.join("");
-        } else{
-            return [a[0]].join("");
+    if(!s || s.length < 1)  return "";
+    let start = 0, end = 0;
+    for(let i=0; i<s.length; i++){
+        let len1 = expandAroundCenter(s, i, i);
+        let len2 = expandAroundCenter(s, i, i+1);
+        let len = len1 > len2 ? len1 : len2;
+        if(len > end - start){
+            start = i - parseInt((len - 1)/2);
+            end = i + parseInt(len/2);
         }
     }
-    if(a.length > 2){
-        for(let j = 0;j < a.length;j++){
-            for(let i = j+1;i < a.length;i++){
-                if(a[j] == a[i]){
-                    arr.push([j,i,i-j+1]);
-                }
-            }
-        }
-        for(let i in arr){
-            let count = 0;
-            let len = arr[i][2]/2;
-            trr = a.slice(arr[i][0],arr[i][1]+1);
-            if(parseInt(len) == 1){
-                if((arr[i][2] == 2 && trr[0] == trr[1]) || (arr[i][2] == 3 && trr[0] == trr[2])){
-                    brr.push(trr);
-                }
-            } else{
-                for(let j=0;j<parseInt(len);j++){
-                    if(trr[j] === trr[arr[i][2] - j-1]){
-                        count++;
-                    }
-                }
-                if(count == parseInt(len)){
-                    brr.push(trr);
-                }
-            }
-        }
-        if(brr.length > 0){
-            for(let i in brr){
-                if(brr[i].length > max){
-                    max = brr[i].length;
-                    res = brr[i].join("");
-                }
-            }    
-        } else{
-            res = [a[0]].join("");
-        }
-        
-    }
-    return res;
+    return s.substr(start, end + 1);
 };
 // @lc code=end
 
