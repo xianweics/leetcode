@@ -32,27 +32,27 @@ function Trim(str){
   return str.replace(/(^\s*)|(\s*$)/g, ""); 
 }
 
-
+//先规定好益出的大小值
 const MIN = -1 * Math.pow(2, 31);
 const MAX = Math.pow(2, 31) - 1;
 
 var myAtoi = function(str) {
-    str = str.trim();
+    str = str.trim();  //去空
     let result = '', symbol = '';
     let idx = 0;
 
-    if(str.charCodeAt(0) === 45){
+    if(str.charCodeAt(0) === 45){  //判断正负号
         idx++;
         symbol = '-';
     }
     else if(str.charCodeAt(0) === 43){
         idx++;
     }
-    else if(str.charCodeAt(0) < 48 || str.charCodeAt(0) > 57){
+    else if(str.charCodeAt(0) < 48 || str.charCodeAt(0) > 57){   //若是英文直接返回零
         return 0;
     }
 
-    for(let i = idx; i < str.length; i++){
+    for(let i = idx; i < str.length; i++){  // 若数字则不取
         if(str.charCodeAt(i) === 46){
             break;
         }
@@ -64,7 +64,7 @@ var myAtoi = function(str) {
         }
     }
 
-    result = symbol.toString() + result.toString();
+    result = symbol.toString() + result.toString();  //数组转成字符串
 
     if(Number(result) !== Number(result)){
         return 0;
