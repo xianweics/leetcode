@@ -10,6 +10,7 @@ var threeSumClosest = function(nums, target) {
   // 所以我们要将每次的最优解 做对比
     //新建一个array
     var arr = [];
+    var recordNum = 1;
     //三个数 a,b,c
     //a = b+c 
     var sum = 0;
@@ -33,16 +34,25 @@ var threeSumClosest = function(nums, target) {
           l++;
           r--;
         } else if(sum < target){
+          arr.push([nums[i],nums[l], nums[r]])
+          // Math.min
           l++
         } else if(sum > target){
+          arr.push([nums[i],nums[l], nums[r]])
           r-- 
         }
       }
     }
-    return arr
+    console.log('arr2: ', arr);
+    arr2 = arr.sort(function(a, b) {
+      return Math.abs((a[0]+a[1]+a[2]) - target) - Math.abs((b[0]+b[1]+b[2]) - target);
+    })[0];
+    return Number(arr2[0])+ Number(arr2[1]) + Number(arr2[2])
 };
 
-var  nums = [-1,2,1,-4],  target = 1;
+// var  nums = [-1,2,1,-4],  target = 1;
+var  nums = [0,1,2], target = 3;
+
 var val = threeSumClosest(nums, target);
 console.log('val: ', val);
 // 2. (-1 + 2 + 1 = 2).
