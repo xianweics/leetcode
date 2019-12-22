@@ -38,3 +38,8 @@
 
 1. [移除元素](https://github.com/Vstar18/FE-knowledge-algorithm/issues/17)
 2. [实现strStr()](https://github.com/Vstar18/FE-knowledge-algorithm/issues/18)
+
+#### 第八周（2019.12.16-2019.12.22）题数：2 | 笔记：2
+
+1. [删除排序数组中的重复项](https://github.com/Vstar18/FE-knowledge-algorithm/issues/19)
+2. [搜索插入位置](https://github.com/Vstar18/FE-knowledge-algorithm/issues/20)
