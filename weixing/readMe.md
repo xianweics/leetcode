@@ -1,7 +1,7 @@
 #### 🏠刷题合集
 
 ## 进度统计
-![进度](./20191215.png)
+![进度](./WX20191222.png)
 
 ##### 第一周（2019.10.28 - 2019.11.03）题数：3 | 笔记：3
 1. [两数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/1)
@@ -38,3 +38,8 @@
 
 1. [移除元素](https://github.com/Vstar18/FE-knowledge-algorithm/issues/17)
 2. [实现strStr()](https://github.com/Vstar18/FE-knowledge-algorithm/issues/18)
+
+#### 第八周（2019.12.16-2019.12.22）题数：2 | 笔记：2
+
+1. [删除排序数组中的重复项](https://github.com/Vstar18/FE-knowledge-algorithm/issues/19)
+2. [搜索插入位置](https://github.com/Vstar18/FE-knowledge-algorithm/issues/20)
