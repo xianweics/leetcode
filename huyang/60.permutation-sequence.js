@@ -11,32 +11,20 @@
  * @return {string}
  */
 // 第k个排列
-// 先生成排列组合
-// 超时
-var newArr = function(tmp,arr,k){
-	let res = [];
-	function inner(tmp){
-		for(let i in arr){
-			if(tmp.length == arr.length-1){
-				if(tmp.indexOf(arr[i])<0){
-					res.push(tmp.concat(arr[i]).join(""));
-				}
-				continue;
-			}
-			if(tmp.indexOf(arr[i]) < 0){
-				inner(tmp.concat(arr[i]));
-			}
-			if(res.length == k){
-				return res;
-			}
-		}
-	}
-	inner(tmp);
-	return res;
-};
+// 生成排列组合
+var pailie = function(arr, tmp, res, k){
+    if(res.length == k) return;
+    if(arr.length == 0) res.push(tmp);
+    for(let i=0; i<arr.length; i++){
+        let newArr = [...arr];
+        newArr.splice(i, 1);
+        pailie(newArr, tmp+arr[i], res, k);
+    }
+}
 var getPermutation = function(n, k) {
-    let res = newArr([], Array.from({length: n},(item, index)=> index+1), k);
-    return res.pop();
+    let res = [];
+    pailie(Array.from({length:n},(item, index)=> index+1), '', res, k);
+    return res[k-1];
 };
 // @lc code=end
 
