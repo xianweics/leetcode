@@ -42,5 +42,32 @@ var inorderTraversal1 = function(root) {
     return result
 };
 
-
+// morris遍历，空间复杂度O(1)
+var morris = function(root) {
+    let result = []
+    let curNode = root
+    while(curNode !== null) {
+        if (curNode.left === null) {
+            result.push(curNode.val)
+            curNode = curNode.right
+        } else {
+            let node = curNode.left
+            // 找当前节点的左节点最右子节点
+            while(node.right && node.right !== curNode) {
+                node = node.right
+            }
+            if (node.right === curNode) {
+                result.push(curNode.val)
+                curNode = curNode.right
+                node.right = null
+            } else {
+                // 设置线索
+                node.right = curNode
+                // 继续往左遍历
+                curNode = curNode.left
+            }
+        }
+    }
+    return result
+};
 

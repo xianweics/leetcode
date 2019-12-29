@@ -16,6 +16,10 @@
 - [**21、合并两个有序链表**](https://github.com/hubvue/algorithms/issues/43)
 - [**22、括号生成**](https://github.com/hubvue/algorithms/issues/44)
 - [**23、合并 K 个排序链表**](https://github.com/hubvue/algorithms/issues/45)
+- [**24、两两交换链表中的节点**](https://github.com/hubvue/algorithms/issues/46)
+- [**25、K 个一组翻转链表**](https://github.com/hubvue/algorithms/issues/47)
+- [**26、删除排序数组中的重复项**](https://github.com/hubvue/algorithms/issues/48)
+- [**27、移除元素**](https://github.com/hubvue/algorithms/issues/49)
 
 ## 进度统计
 
@@ -70,6 +74,18 @@
 
 * 总刷题数：107 / 1247
 
+- 第八周进度: 2 题 截止时间: 2019-12-22 难度: 2 简 0 中 0 难
+
+  - 283、移动零
+  - 290、单词规律
+
+- 第九周进度: 2 题 截止时间: 2019-12-29 难度: 2 简 0 中 0 难
+
+  - 292、Nim 游戏
+  - 344、反转字符串
+
+* 总刷题数：111 / 1247
+
 ### 笔记进度
 
 - 第一周进度：2 题 截止时间：2019-11-03
@@ -107,6 +123,16 @@
   - 22、括号生成
   - 23、合并 K 个排序链表
 
+- 第八周进度：2 题 截止时间：2019-12-22
+
+  - 24、两两交换链表中的节点
+  - 25、K 个一组翻转链表
+
+- 第九周进度：2 题 截止时间：2019-12-29
+
+  - 26、删除排序数组中的重复项
+  - 27、移除元素
+
 ### 进展图
 
-![](./2019-12-15.jpg)
+![](./2019-12-29.jpg)
