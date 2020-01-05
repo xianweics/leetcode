@@ -1,7 +1,7 @@
 #### 🏠刷题合集
 
 ## 进度统计
-![进度](./WX20191229.png)
+![进度](./WX20200105.png)
 
 ##### 第一周（2019.10.28 - 2019.11.03）题数：3 | 笔记：3
 1. [两数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/1)
@@ -48,3 +48,8 @@
 
 1. [整数转罗马数字](https://github.com/Vstar18/FE-knowledge-algorithm/issues/21)
 2. [电话号码的字母组合](https://github.com/Vstar18/FE-knowledge-algorithm/issues/22)
+
+#### 第十周（2019.12.30-2020.01.05）题数：2 | 笔记：2
+
+1. [外观数列](https://github.com/Vstar18/FE-knowledge-algorithm/issues/23)
+2. [最大子序和 ](https://github.com/Vstar18/FE-knowledge-algorithm/issues/24)
