@@ -12,35 +12,35 @@
  * @return {Node}
  */
 var connect = function(root) {
-  if (!root) return root
-  let curNode = root
-  let preNode = null
-  let childHead = null
-  while (curNode) {
-    if (!childHead) {
-      childHead = curNode.left || curNode.right
-    }
-    if (curNode.left) {
-      if (preNode) {
-        preNode.right = curNode.left
-      }
-      preNode = curNode.left
-    }
-
-    if (curNode.right) {
-      if (preNode) {
-        preNode.right = curNode.right
-      }
-      preNode = curNode.right
-    }
-
-    if (!curNode.next) {
-      curNode = curNode.next
-    } else {
-      curNode = childHead
-      childHead = null
-      preNode = null
-    }
-  }
+  if (!root) return null
+  con(root)
   return root
 };
+
+function con(node) {
+  if (node.left && node.right) {
+    let curNode = node.left
+    node.left.next = node.right
+    let headNode = null
+    let preNode = null
+    while (curNode) {
+      if (preNode) {
+        preNode.next = curNode.left || curNode.right || null
+        preNode = curNode.right || curNode.left || preNode
+      }
+      if (curNode.left && curNode.right) {
+        curNode.left.next = curNode.right
+      }
+      if (!headNode) {
+        headNode = curNode.left || curNode.right || null
+      }
+      if (curNode.next === null) {
+        curNode = headNode
+        headNode = null
+        preNode = null
+      } else {
+        curNode = curNode.next
+      }
+    }
+  }
+}
