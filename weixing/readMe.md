@@ -1,7 +1,7 @@
 #### 🏠刷题合集
 
 ## 进度统计
-![进度](./WX20200105.png)
+![进度](./WX20200119.png)
 
 ##### 第一周（2019.10.28 - 2019.11.03）题数：3 | 笔记：3
 1. [两数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/1)
@@ -58,3 +58,8 @@
 
 1. [最后一个单词的长度](https://github.com/Vstar18/FE-knowledge-algorithm/issues/25)
 2. [加一](https://github.com/Vstar18/FE-knowledge-algorithm/issues/26)
+
+#### 第十二周（2019.01.13-2020.01.19）题数：2 | 笔记：1
+
+1. [四数之和](https://github.com/Vstar18/FE-knowledge-algorithm/issues/27)
+2. 删除链表的倒数第N个节点   
